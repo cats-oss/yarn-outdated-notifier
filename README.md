@@ -8,6 +8,15 @@
 
 
 
+## Example Issue
+
+![2018-03-01 Yarn Outdated Notifier](./docs/assets/example-issue.png)
+
+> **Issue URL:** https://github.com/tsuyoshiwada/yarn-outdated-notifier-with-circleci/issues/2
+
+
+
+
 ## Motivation
 
 ![Overview](./docs/assets/overview.png)

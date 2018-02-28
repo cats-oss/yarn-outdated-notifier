@@ -1,0 +1,49 @@
+{
+  "name": "yarn-outdated-notifier",
+  "version": "0.0.1",
+  "description": "Add link to CHANGELOG the result of `$ yarn outdated`, and notify to GitHub Issue.",
+  "bin": {
+    "outdated-notifier": "bin/index.js"
+  },
+  "main": "lib/yarn-outdated-notifier.js",
+  "scripts": {
+    "test": "yarn test:lint && yarn test:unit",
+    "test:lint": "eslint \"lib/**/*.js\" .eslintrc.js --no-ignore",
+    "test:unit": "jest",
+    "test:watch": "yarn test:unit --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsuyoshiwada/yarn-outdated-notifier.git"
+  },
+  "keywords": [
+    "yarn",
+    "outdated",
+    "notifier",
+    "package-maintenance",
+    "changelog"
+  ],
+  "author": "tsuyoshiwada",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tsuyoshiwada/yarn-outdated-notifier/issues"
+  },
+  "homepage": "https://github.com/tsuyoshiwada/yarn-outdated-notifier#readme",
+  "devDependencies": {
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jest": "^21.12.2",
+    "jest": "^22.4.2"
+  },
+  "dependencies": {
+    "chalk": "^2.3.1",
+    "github-url-from-git": "^1.5.0",
+    "handlebars": "^4.0.11",
+    "humanize-duration": "^3.12.1",
+    "meow": "^4.0.0",
+    "node-emoji": "^1.8.1",
+    "request": "^2.83.0",
+    "yarn-outdated-formatter": "^2.0.0"
+  }
+}

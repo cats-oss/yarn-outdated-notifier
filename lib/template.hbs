@@ -1,0 +1,52 @@
+## :recycle: Hi, It's time to update the npm package!
+
+**{{all.length}} npm packages** are outdated.  
+Let's begin maintenance to maintain a fresh package!
+{{#if needsChangelog}}
+
+
+## :no_entry_sign: Needs maintenance {{#if meta.changelogs}}`{{meta.changelogs}}`{{else}}changelog list (`--changelogs`){{/if}}
+
+CHANGELOG was not found in **{{needsChangelog.length}}/{{all.length}} packages**.
+
+{{#if meta.changelogs}}
+Together with maintenance work,
+let's add a link to CHANGELOG as much as possible to `{{meta.changelogs}}`.
+{{else}}
+Let's add a link to CHANGELOG using the `--changelogs` option.
+{{/if}}
+
+---
+
+<details>
+  <summary>Packages</summary>
+  <ul>
+    {{#each needsChangelog as |pkg|}}
+    <li><a href="{{pkg.url}}">{{pkg.name}}</a></li>
+    {{/each}}
+  </ul>
+</details>
+{{/if}}
+
+---
+{{#if outdated.major.packages}}
+
+
+## :warning: Major ({{outdated.major.packages.length}} packages)
+
+{{{outdated.major.table}}}
+{{/if}}
+{{#if outdated.minor.packages}}
+
+
+## :zap: Minor ({{outdated.minor.packages.length}} packages)
+
+{{{outdated.minor.table}}}
+{{/if}}
+{{#if outdated.patch.packages}}
+
+
+## :beginner: Patch ({{outdated.patch.packages.length}} packages)
+
+{{{outdated.patch.table}}}
+{{/if}}

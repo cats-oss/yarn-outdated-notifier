@@ -1,0 +1,44 @@
+version: 2
+
+references:
+  container_config: &container_config
+    docker:
+      - image: circleci/node:9.3
+    working_directory: ~/repo
+
+  yarn_cache_config: &yarn_cache_config
+    key: dependencies-{{.Branch}}-{{checksum "yarn.lock"}}-{{checksum "package.json"}}
+    paths:
+      - node_modules
+
+  restore_cache: &restore_cache
+    restore_cache:
+      <<: *yarn_cache_config
+      name: Restore Yarn Cache
+
+  save_cache: &save_cache
+    save_cache:
+      <<: *yarn_cache_config
+      name: Save Yarn Cache
+
+  deps: &deps
+    run:
+      name: Install dependencies
+      command: yarn install
+
+jobs:
+  test:
+    <<: *container_config
+    steps:
+      - checkout
+      - *restore_cache
+      - *deps
+      - *save_cache
+      - run: yarn test
+
+workflows:
+  version: 2
+
+  testing:
+    jobs:
+      - test

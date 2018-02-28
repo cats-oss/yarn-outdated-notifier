@@ -5,7 +5,6 @@
   "bin": {
     "outdated-notifier": "bin/index.js"
   },
-  "main": "lib/yarn-outdated-notifier.js",
   "scripts": {
     "test": "yarn test:lint && yarn test:unit",
     "test:lint": "eslint \"lib/**/*.js\" .eslintrc.js --no-ignore",

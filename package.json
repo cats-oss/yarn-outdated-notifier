@@ -1,6 +1,6 @@
 {
   "name": "yarn-outdated-notifier",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Add link to CHANGELOG the result of `$ yarn outdated`, and notify to GitHub Issue.",
   "bin": {
     "outdated-notifier": "bin/index.js"

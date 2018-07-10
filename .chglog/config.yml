@@ -2,7 +2,7 @@ style: github
 template: CHANGELOG.tpl.md
 info:
   title: CHANGELOG
-  repository_url: https://github.com/tsuyoshiwada/yarn-outdated-notifier
+  repository_url: https://github.com/cats-oss/yarn-outdated-notifier
 options:
   commits:
     filters:

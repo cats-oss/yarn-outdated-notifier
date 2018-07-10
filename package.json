@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tsuyoshiwada/yarn-outdated-notifier.git"
+    "url": "git+https://github.com/cats-oss/yarn-outdated-notifier.git"
   },
   "keywords": [
     "yarn",
@@ -22,12 +22,12 @@
     "package-maintenance",
     "changelog"
   ],
-  "author": "tsuyoshiwada",
+  "author": "CyberAgent, Inc",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tsuyoshiwada/yarn-outdated-notifier/issues"
+    "url": "https://github.com/cats-oss/yarn-outdated-notifier/issues"
   },
-  "homepage": "https://github.com/tsuyoshiwada/yarn-outdated-notifier#readme",
+  "homepage": "https://github.com/cats-oss/yarn-outdated-notifier#readme",
   "devDependencies": {
     "eslint": "^4.18.1",
     "eslint-config-airbnb-base": "^12.1.0",

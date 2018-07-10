@@ -1,7 +1,7 @@
 # :rocket: yarn-outdated-notifier
 
 [![npm](https://img.shields.io/npm/v/yarn-outdated-notifier.svg?style=flat-square)](https://www.npmjs.com/package/yarn-outdated-notifier)
-[![CircleCI](https://img.shields.io/circleci/project/github/tsuyoshiwada/yarn-outdated-notifier/master.svg?style=flat-square)](https://circleci.com/gh/tsuyoshiwada/yarn-outdated-notifier)
+[![CircleCI](https://img.shields.io/circleci/project/github/cats-oss/yarn-outdated-notifier/master.svg?style=flat-square)](https://circleci.com/gh/cats-oss/yarn-outdated-notifier)
 
 > Add link to CHANGELOG the result of `$ yarn outdated`, and notify to GitHub Issue.
 
@@ -122,14 +122,14 @@ moment: https://github.com/moment/moment/blob/develop/CHANGELOG.md
 1. Push to the branch: `git push origin my-new-feature`
 1. Submit a pull request :love_letter:
 
-Bugs, feature requests and comments are more than welcome in the [issues](https://github.com/tsuyoshiwada/yarn-outdated-notifier/issues).
+Bugs, feature requests and comments are more than welcome in the [issues](https://github.com/cats-oss/yarn-outdated-notifier/issues).
 
 
 
 
 ## License
 
-[MIT © tsuyoshiwada](./LICENSE)
+[MIT © Cyberagent, Inc](./LICENSE)
 
 
 

@@ -1,10 +1,14 @@
 ## CHANGELOG
 
 
-<a name="1.0.0"></a>
-## [1.0.0](https://github.com/cats-oss/yarn-outdated-notifier/compare/0.0.2...1.0.0) (2018-07-10)
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/cats-oss/yarn-outdated-notifier/compare/0.0.2...1.0.1) (2018-12-25)
 
-* Transfer license to `CyberAgent, Inc`.
+### Bug Fixes
+
+* add test cases about specifying labels / assignees
+* changes to pass test in any environments
+* follow interfaces of Github API v3
 
 
 <a name="0.0.2"></a>
@@ -21,4 +25,3 @@
 ### Features
 
 * First implement
-

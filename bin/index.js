@@ -15,7 +15,7 @@ ${chalk.yellow('USAGE:')}
 
 ${chalk.yellow('OPTIONS:')}
   --api-token         API token for GitHub (required)
-  --githubApiAddress, provide address for github enterprise (default: api.github.com)
+  --github-api-url,   provide url for github enterprise (default: "api.github.com")
   --owner,      -o    repository owner name (default: "git config --get remote.origin.url" infomation)
   --repository, -r    repository name (default: "git config --get remote.origin.url" infomation)
   --title,      -t    issue title for GitHub
@@ -38,6 +38,9 @@ ${chalk.yellow('EXAMPLES:')}
 `, {
   flags: {
     apiToken: {
+      type: 'string',
+    },
+    githubApiUrl:{
       type: 'string',
     },
     owner: {

@@ -1,6 +1,14 @@
 ## CHANGELOG
 
 
+<a name="1.1.0"></a>
+## [1.1.0](https://github.com/cats-oss/yarn-outdated-notifier/compare/1.0.1...1.1.0) (2019-02-28)
+
+### Features
+
+* Allow override of address for GitHub enterprise url. Thank you [@TimFretwell](https://github.com/TimFretwell) :tada:
+
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/cats-oss/yarn-outdated-notifier/compare/0.0.2...1.0.1) (2018-12-25)
 

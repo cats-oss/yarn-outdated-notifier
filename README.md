@@ -26,13 +26,13 @@
 
 ### 1. Keeping fresh package
 
-`yarn` has a useful toolset for updating npm packages like `yarn outdated` and `yarn upgrade-interactive`.  
+`yarn` has a useful toolset for updating npm packages like `yarn outdated` and `yarn upgrade-interactive`.
 Utilize these tool sets to visualize packages that need updating and register them to GitHub Issue.
 
 
 ### 2. Understand the changes
 
-The problem with updating the npm package is that unintended changes destroy the project.  
+The problem with updating the npm package is that unintended changes destroy the project.
 By checking CHANGELOG prepared by each package, it is possible to solve this problem to a certain extent.
 
 Therefore, `yarn-outdated-notifier` adds a link to CHANGELOG to the result of `yarn outdated` and notifies.
@@ -71,7 +71,7 @@ $ yarn outdated-notifier --help
 
   OPTIONS:
     --api-token         API token for GitHub (required)
-    --github-api-url,   provide url for github enterprise (default: "api.github.com")
+    --github-api-url    provide url for GitHub enterprise (default: "api.github.com")
     --owner,      -o    repository owner name (default: "git config --get remote.origin.url" infomation)
     --repository, -r    repository name (default: "git config --get remote.origin.url" infomation)
     --title,      -t    issue title for GitHub
